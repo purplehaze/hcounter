@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+<!--Include CSS-->
+
+</head>
+<body>
+<wicket:extend>
+	
+	<div class="row">
+		<div class="col-sm-4"><h2>Events</h2></div>
+		<div class="col-sm-4"></div>
+		<div class="col-sm-4">
+			<form wicket:id="loadEventsForm" method="post">
+				<input type="submit" wicket:id="loadEventsBtn" value="Load Events" />
+			</form>	
+		</div>
+	</div>
+	
+	<div wicket:id="eventContent" />
+	
+</wicket:extend>
+</body>
+</html>

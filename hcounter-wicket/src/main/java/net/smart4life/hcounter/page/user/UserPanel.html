@@ -1,0 +1,25 @@
+<html xmlns:wicket="http://wicket.apache.org/">
+<head>
+    <title>Users</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+  <wicket:panel>
+  <form wicket:id="userForm">
+    Add your user here:
+    <p>
+    <input type="text" wicket:id="loginname" />
+    <!-- input type="text" wicket : iiiiid="comment" class="nospam" onfocus="getElementById('formsubmit').focus();"/ -->
+    <p>
+    <input type="submit" value="Submit" id="formsubmit"/>
+  </form>
+  <p/>
+  <span wicket:id="users">
+    <p>
+        <span wicket:id="id">1</span><br>
+        <span wicket:id="loginname">Loginname here.</span>
+    </p>
+  </span>
+  </wicket:panel>
+</body>
+</html>
