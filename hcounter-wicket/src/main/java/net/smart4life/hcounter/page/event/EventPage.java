@@ -12,17 +12,17 @@ import net.smart4life.hcounter.datamodel.entity.User;
 import net.smart4life.hcounter.page.layout.LayoutPage;
 import net.smart4life.hcounter.service.windowsevent.WindowsEventService;
 
-public class WindowsEventPage extends LayoutPage {
+public class EventPage extends LayoutPage {
 
 	@SpringBean
 	private WindowsEventService eventService;
 	
-	public WindowsEventPage(final PageParameters parameters) {
+	public EventPage(final PageParameters parameters) {
 		super(parameters);
 		
 		add(new LoadEventsForm("loadEventsForm"));
 		
-		add(new WindowsEventPanel("eventContent"));
+		add(new EventPanel("eventContent"));
 	}
 	
 	class LoadEventsForm extends Form<ValueMap> {

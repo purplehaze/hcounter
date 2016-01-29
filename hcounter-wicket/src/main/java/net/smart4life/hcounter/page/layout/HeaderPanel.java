@@ -5,7 +5,7 @@ import org.apache.wicket.markup.html.panel.Panel;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
 
 import net.smart4life.hcounter.page.authentication.LoginPage;
-import net.smart4life.hcounter.page.event.WindowsEventPage;
+import net.smart4life.hcounter.page.event.EventPage;
 import net.smart4life.hcounter.page.user.UserPage;
 
 public class HeaderPanel extends Panel {
@@ -29,7 +29,7 @@ public class HeaderPanel extends Panel {
 		add(eventLink = new Link<String>("eventLink"){
 			@Override
 			public void onClick() {
-				setResponsePage(WindowsEventPage.class);
+				setResponsePage(EventPage.class);
 			}
 		});
 		add(loginLink = new Link<String>("loginLink"){

@@ -17,12 +17,12 @@ import org.apache.wicket.util.value.ValueMap;
 import net.smart4life.hcounter.datamodel.entity.WorkEvent;
 import net.smart4life.hcounter.service.windowsevent.WindowsEventService;
 
-public class WindowsEventPanel extends Panel {
+public class EventPanel extends Panel {
 
 	@SpringBean
 	private WindowsEventService eventService;
 	
-	public WindowsEventPanel(String id) {
+	public EventPanel(String id) {
 		super(id);
 		
 

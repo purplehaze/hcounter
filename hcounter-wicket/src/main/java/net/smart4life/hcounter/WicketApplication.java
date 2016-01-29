@@ -9,7 +9,7 @@ import de.agilecoders.wicket.core.Bootstrap;
 import net.smart4life.hcounter.config.JpaConfig;
 import net.smart4life.hcounter.config.ServiceConfig;
 import net.smart4life.hcounter.page.authentication.LoginPage;
-import net.smart4life.hcounter.page.event.WindowsEventPage;
+import net.smart4life.hcounter.page.event.EventPage;
 import net.smart4life.hcounter.page.user.UserPage;
 
 /**
@@ -48,6 +48,6 @@ public class WicketApplication extends WebApplication
 	    
 		mountPage("/user", UserPage.class);
 		mountPage("/login", LoginPage.class);
-		mountPage("/event", WindowsEventPage.class);
+		mountPage("/event", EventPage.class);
 	}
 }
