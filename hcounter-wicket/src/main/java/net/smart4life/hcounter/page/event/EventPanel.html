@@ -5,13 +5,15 @@
 </head>
 <body>
   <wicket:panel>
-
-  <div wicket:id="events" class="row">
-        <div wicket:id="id" class="col-sm-2">1</div>
-        <div wicket:id="eventDate" class="col-sm-2">date.</div>
-        <div wicket:id="workEventType" class="col-sm-2">code.</div>
-        <div wicket:id="creaUser" class="col-sm-6">creaUser.</div>
-  </div>
+  
+    <form wicket:id="eventsForm">
+        <fieldset style="display: inline-block;">
+            <legend>Event-Filter</legend>
+            <span style="float: right;">from: <input wicket:id="dateFrom"/></span> <br/>
+            <span style="float: right;">to: <input wicket:id="dateTo"/></span>
+        </fieldset>
+        <table class="dataview" wicket:id="eventTable">[table]</table>
+    </form>  
   </wicket:panel>
 </body>
 </html>

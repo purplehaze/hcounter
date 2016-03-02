@@ -18,7 +18,7 @@ import org.hibernate.annotations.UpdateTimestamp;
  * Created by roman on 21.09.2015.
  */
 @MappedSuperclass
-public class BaseEntity implements Idable<Long>, Serializable {
+public class BaseEntity implements Identifiable<Long>, Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

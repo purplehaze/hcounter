@@ -1,9 +1,11 @@
 package net.smart4life.hcounter.datamodel.search;
 
+import java.io.Serializable;
+
 /**
  * Created by ILIN02 on 09.03.2015.
  */
-public class SortMeta {
+public class SortMeta implements Serializable {
 	private SortDirection sortDirection;
 	private String sortField;
 

@@ -41,7 +41,7 @@ public class WicketApplication extends WebApplication
 		
 	    AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
 	    //Scan package for annotated beans
-	    ctx.scan(ServiceConfig.class.getPackage().getName(), JpaConfig.class.getPackage().getName());
+	    ctx.scan(ServiceConfig.class.getPackage().getName(), JpaConfig.class.getPackage().getName(), WicketApplication.class.getPackage().getName());
 	    ctx.refresh();
 
 	    getComponentInstantiationListeners().add(new SpringComponentInjector(this, ctx));
